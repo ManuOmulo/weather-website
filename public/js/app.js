@@ -35,7 +35,7 @@ form.addEventListener("submit", (e) => {
     messageOne.textContent = "must provide a location";
   }
 
-  fetch(`http://localhost:3000/weather?address=${location}`)
+  fetch(`/weather?address=${location}`)
     .then((res) => res.json())
     .then((data) => {
       const time = new Date(data.date * 1000);
