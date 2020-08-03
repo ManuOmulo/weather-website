@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/46a9f855ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/weather.png">
+    <title>Help</title>
+</head>
+
+<body>
+    {{>header}}
+    <div class="main-help">
+        <p>
+            To use the API, copy the above URL the add <code>/weather</code>. After that add a query string address and
+            provide the city name. Eg.
+        </p>
+        <p class="code">
+            <code>url/weather?address={desired location}</code>
+        </p>
+
+        <p>
+            This will return a result an object containing:-
+        <ul>
+            <li><code>forecast</code></li>
+            <li><code>location</code></li>
+            <li><code>weather</code></li>
+            <li><code>pressure</code></li>
+            <li><code>humidity</code></li>
+            <li><code>wind_speed</code></li>
+            <li><code>pop</code></li>
+            <li><code>date</code></li>
+            <li><code>morning</code></li>
+            <li><code>max</code></li>
+            <li><code>night</code></li>
+            <li><code>address</code></li>
+        </ul>
+        </p>
+
+    </div>
+    {{>footer}}
+</body>
+
+</html>

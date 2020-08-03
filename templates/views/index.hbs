@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/46a9f855ee.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Weather App</title>
+</head>
+
+<body>
+    {{>header}}
+    <div class="main-content">
+        <div class="text">
+            <p>Search for the Weather information of any city in the world</p>
+        </div>
+        <form action="">
+            <input type="text" placeholder="location">
+            <button>Search</button>
+        </form>
+        <div class="details">
+            <h2 id="date">Forecast</h2>
+            <p class="message-1" id="message-1"></p>
+            <p class="message-2" id="message-2"></p>
+            <div class="weather">
+                <div class="temperature">
+                    <p class="morning" id="morning"></p>
+                    <p class="maximum" id="maximum"></p>
+                    <p class="night" id="night"></p>
+                </div>
+                <p class="pop" id="pop"></p>
+                <p class="description" id="description"></p>
+                <p class="humidity" id="humidity"></p>
+                <p class="pressure" id="pressure"></p>
+                <p class="wind-speed" id="wind-speed"></p>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

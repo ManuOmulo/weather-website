@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Montserrat:wght@500&display=swap");
+
+:root {
+  --main-color: #07020d;
+  --secondary-color: #5db7de;
+  --main-font: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-title {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.empty {
+  width: 80%;
+  height: 70vh;
+  margin: auto;
+}
+
+.empty p {
+  line-height: 25px;
+  margin-top: 20px;
+}
+
+.empty .list {
+  margin-top: 10px;
+}
+
+.empty .list li {
+  padding-left: 5px;
+}
+
+.main-help {
+  width: 80%;
+  height: 80vh;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.main-help p {
+  line-height: 25px;
+  margin-top: 20px;
+}
+
+.main-help ul li {
+  margin: 10px 20px;
+}
+
+code {
+  background-color: rgb(221, 216, 216);
+  color: red;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--main-color);
+  height: 10vh;
+  display: flex;
+}
+
+header .logo {
+  color: var(--secondary-color);
+  font-size: 50px;
+  margin-left: 10px;
+}
+
+header ul {
+  position: absolute;
+  right: 0;
+}
+
+header ul li {
+  list-style: none;
+  display: inline;
+  justify-content: space-around;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin: 10px;
+  font-size: 20px;
+  font-family: var(--main-font);
+}
+
+footer {
+  background-color: var(--main-color);
+  margin-top: 70px;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+footer h3 {
+  margin-right: auto;
+  color: var(--secondary-color);
+  font-family: var(--main-font);
+  font-size: 10px;
+}
+
+footer ul li {
+  display: inline;
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.main-content {
+  margin-top: 5vh;
+  display: grid;
+}
+
+.text p {
+  font-size: 15px;
+  color: var(--main-color);
+  font-style: italic;
+  text-align: center;
+}
+
+form {
+  margin: 20px auto;
+}
+
+form input {
+  width: 250px;
+  height: 30px;
+  padding: 10px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  width: 100px;
+  height: 30px;
+  margin-left: 5px;
+  font-size: 16px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+}
+
+.details {
+  background-color: rgb(248, 247, 247);
+  color: rgb(129, 124, 124);
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  display: grid;
+  height: 55vh;
+  width: 95%;
+}
+
+.details h2 {
+  font-size: 25px;
+  text-align: start;
+  margin: 10px;
+  color: var(--secondary-color);
+}
+
+.details .message-1 {
+  margin: 5px 10px;
+  color: var(--secondary-color);
+  font-family: var(--main-font);
+}
+
+.details .message-2 {
+  margin: 0 10px;
+  color: black;
+}
+
+.details .main {
+  color: grey;
+  margin: 0 10px;
+  font-size: 25px;
+}
+
+.details .weather p {
+  padding: 5px;
+}
+
+.weather .temperature {
+  color: var(--secondary-color);
+  display: flex;
+}
+
+.weather .temperature p {
+  font-size: 25px;
+  font-family: var(--main-font);
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.error {
+  height: 62vh;
+}
+
+@media screen and (max-width: 330px) {
+  header {
+    width: 100%;
+  }
+
+  header .logo i {
+    font-size: 30px;
+  }
+
+  header ul {
+    padding-top: 10px;
+  }
+
+  header ul li a {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
+  .header-title {
+    font-size: 20px;
+  }
+
+  .text p {
+    width: 80%;
+    margin-left: 30px;
+  }
+
+  form input {
+    width: 180px;
+  }
+
+  .details {
+    display: grid;
+    width: 90%;
+    height: 70vh;
+  }
+
+  .details h2 {
+    font-size: 20px;
+  }
+
+  .details .message-1 {
+    font-size: 10px;
+    width: 80%;
+  }
+
+  .details .message-2 {
+    width: 85%;
+    font-size: 13px;
+  }
+
+  .details .weather .temperature {
+    width: 80%;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+
+  .details .weather .temperature p {
+    display: none;
+  }
+
+  .main-help {
+    width: 80%;
+    height: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .main-help ul {
+    margin-bottom: 150px;
+  }
+
+  footer {
+    display: flex;
+    width: 100%;
+    margin-top: 250px;
+    font-size: 10px;
+  }
+
+  footer ul li i {
+    margin: 0px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .details {
+    height: 70vh;
+  }
+
+  .details .message-1 {
+    font-size: 20px;
+  }
+
+  .details .weather .temperature {
+    width: 80%;
+    margin-left: -5px;
+  }
+
+  .details .weather .temperature p {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+
+  .main-help {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header ul li a {
+    font-size: 30px;
+    margin: 20px;
+  }
+
+  .header-title {
+    font-size: 60px;
+    margin-top: 30px;
+  }
+
+  .main-content .text p {
+    font-size: 20px;
+  }
+
+  form input {
+    margin-top: 15px;
+    width: 400px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  form button {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  .details {
+    height: 90vh;
+    width: 85%;
+  }
+
+  .details h2 {
+    font-size: 40px;
+    margin-bottom: 0px;
+  }
+
+  .details .message-1 {
+    font-size: 30px;
+  }
+
+  .details .message-2 {
+    font-size: 25px;
+  }
+
+  .details .weather .temperature p {
+    font-size: 35px;
+    margin-left: 20px;
+  }
+
+  .details .weather p {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .main-help {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+  }
+
+  footer {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  header .logo i {
+    font-size: 60px;
+    margin-left: 10px;
+  }
+
+  header ul li a {
+    font-size: 25px;
+    padding: 30px;
+  }
+
+  .header-title {
+    margin-top: 15vh;
+  }
+
+  .main-content {
+    margin-top: 50px;
+  }
+
+  .details {
+    width: 70%;
+    height: 120vh;
+  }
+
+  .details .message-1 {
+    margin: 20px 10px;
+    width: 80%;
+  }
+
+  .details .message-2 {
+    width: 95%;
+  }
+
+  .details .weather p {
+    font-size: 25px;
+  }
+
+  .details .weather .temperature p {
+    margin-left: 20px;
+    font-size: 40px;
+    padding: 30px;
+  }
+
+  footer {
+    margin-top: 50px;
+  }
+}
